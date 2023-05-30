@@ -8,3 +8,11 @@ Imagine we have a struct containing attributes of animal diseases. We want to cr
 
 # here is our struct model 
 
+```swift
+struct symptoms : Hashable,Decodable,Identifiable {
+    var id:Int
+    var name : String
+    var category : String
+    var state : Bool
+}
+```

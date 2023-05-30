@@ -26,7 +26,7 @@ It's fast.
 
 
 
-# here is our struct model 
+# Struct model 
 
 ```swift
 struct symptoms : Hashable,Decodable,Identifiable {
@@ -36,7 +36,7 @@ struct symptoms : Hashable,Decodable,Identifiable {
     var state : Bool
 }
 ```
-# here is our instances based on struct model 
+# Instances based on struct model 
 
 ```swift
   @State var example : [symptoms] = [
@@ -56,10 +56,21 @@ struct symptoms : Hashable,Decodable,Identifiable {
 
    ]
 ```
+# The temporary SET variable which stores selected items of example array
+
+```swift
+//array turns into set
+    @State var tempList : Set<Int> = []
+```
 
 # here is function which receives the temporary selected items as a set value
 
 ```swift
+
+ // calling function 
+
+     classifier(check: tempList)
+
  //set function
      func classifier(check: Set<Int>) {
 
@@ -75,6 +86,8 @@ struct symptoms : Hashable,Decodable,Identifiable {
             result = "symp 1 , symp 2"
         case[2,3] :
             result = "symp 3 , symp 4"
+   //   case ... 
+
         default :
             result = "none"
         }

@@ -4,4 +4,7 @@ You might be curious why we need to use SET in our projects. SETs are like array
 
 # Description of Example 
 
-Imagine we have a struct containing atributes of an animal deceases. We want to create a doctor assistant app in order to input symptomps of an animal in the app in order to get a predicted answer related to symptoms.
+Imagine we have a struct containing attributes of animal diseases. We want to create a doctor assistant app to input the symptoms of an animal in the app to get a predicted answer related to symptoms.
+
+# here is our struct model 
+

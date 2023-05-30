@@ -56,8 +56,6 @@ struct symptoms : Hashable,Decodable,Identifiable {
 
    ]
 ```
-# here is function which receives the temporary selected items as a set value
-
 
 # here is function which receives the temporary selected items as a set value
 

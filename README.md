@@ -8,17 +8,21 @@ Imagine we have a struct containing attributes of animal diseases. We want to cr
 
 # The Output Video
 
-
-
 https://github.com/hesamsaeedi55/Why-The-Sets/assets/118046088/ce09b327-6907-4716-995b-cb0feb92855a
 
 # WHY THE SETS?!
  
 ## Main Reason
 
-Because we don't need selected symptoms to be as a sorted array, we just want to know which of them are seelcted and it will be a duplication of code if we decide to define them in order. For example, if user chooses the first and the second item the temp item is [item 1, item 2] while if the user select the same but in reverse sort it would be [item 2, item 1] which makes a trouble to check the temp item and we have to write two or more cases for one group of symptoms. We just need to know which items are in temporary variable and just check them in the function. Here comes the sets with feature of having no order.
+Because we don't need selected symptoms to be as a sorted array, we only want to know which of them are selected and it will be a duplication of code if we decide to define them in order. For example, if the user chooses the first and the second item the temp item is [item 1, item 2] while if the user selects the same but in reverse sort it would be [item 2, item 1] which makes trouble to check the temp item and we have to write two or more cases for one group of symptoms. We only need to know which items are in a temporary variable and check them in the function. Here come the sets with the feature of having no order.
 
 ## Second Reason
+
+Since each symptom is unique, we must prevent a repeat in the selected variable. For example, if the user taps a symptom more than once the temp item that's going to get checked in function turns into duplication of a specific symptom more than once which is wrong. The Set doesn't accept duplication of an item. So if the user taps the "item 1" more than once, the temp variable still is an array with just one instance of "item 1" which is appropriate to get checked.
+
+## third Reason
+
+It's fast.
 
 
 

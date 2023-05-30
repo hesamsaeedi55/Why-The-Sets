@@ -23,24 +23,20 @@ HStack {
 
 
  //set function
-   func classifier(check: Set<Int>) {
-        
-        
-//        var tr = check["a"]?.description
-//        tempResult = tr!
-        
+     func classifier(check: Set<Int>) {
+
         let firstdisease = check
         
         print(firstdisease)
         switch firstdisease {
         case [0] :
-            result = "0"
+            result = "symp1"
         case [1] :
-            result = "1"
+            result = "symp2"
         case [1,0] :
-            result = "01"
+            result = "symp 1 , symp 2"
         case[2,3] :
-            result = "23"
+            result = "symp 3 , symp 4"
         default :
             result = "none"
         }
